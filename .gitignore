@@ -1,0 +1,16 @@
+client/images/*
+client/fonts/*
+
+public/*
+.tmp/*
+
+node_modules/*
+components/*
+
+sass/*
+sass-bootstrap
+.sass-cache/*
+
+.build/*
+
+dist/*

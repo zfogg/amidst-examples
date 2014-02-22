@@ -1,0 +1,11 @@
+@import 'sass-bootstrap/lib/mixins'
+
+@import 'variables'
+
+
+a
+  @include transition(color 0.1s ease-in)
+  &:hover
+    color: $link-hover-color
+    text-decoration: none
+

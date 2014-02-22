@@ -1,0 +1,42 @@
+{
+  "name": "zfo.gg",
+  "version": "10.0.0",
+  "engines": {
+    "node": ">=0.10.25"
+  },
+  "repository": "http://github.com/zfogg/zfo.gg",
+  "dependencies": {
+    "express": "~3.4.3",
+    "jade": "~1.1.5",
+    "socket.io": "~0.9.16",
+    "q": "~0.9.7",
+    "supermarked": "~1.1.0"
+  },
+  "devDependencies": {
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-coffee": "~0.7.0",
+    "grunt-contrib-compass": "~0.6.0",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-cssmin": "~0.7.0",
+    "grunt-contrib-jade": "~0.9.1",
+    "grunt-contrib-uglify": "~0.2.7",
+    "grunt-contrib-watch": "git://github.com/gruntjs/grunt-contrib-watch",
+    "grunt-autoprefixer": "~0.4.2",
+    "grunt-concurrent": "~0.4.1",
+    "grunt-express-server": "~0.4.5",
+    "grunt-newer": "~0.5.4",
+    "grunt-ngmin": "~0.0.2",
+    "grunt-usemin": "~2.0.0",
+    "connect-livereload": "~0.3.0",
+    "load-grunt-tasks": "~0.2.1",
+    "time-grunt": "~0.2.1",
+    "grunt-prettify": "~0.3.4",
+    "grunt-inject": "~0.1.1",
+    "grunt-angular-templates": "~0.5.1",
+    "grunt-banner": "~0.2.0"
+  },
+  "scripts": {
+      "postinstall": "bower install"
+  }
+}
