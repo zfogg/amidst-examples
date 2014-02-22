@@ -1,0 +1,9 @@
+#proximity.single-view
+  header#header
+
+  section#content
+    .row
+      .col-xs-12
+        .device-wrapper(ng-repeat="(uuid, device) in devices")
+          .device(id="device{{$index}}", ng-style="styles['{{uuid}}']")
+

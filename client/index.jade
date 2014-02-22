@@ -1,0 +1,68 @@
+doctype html
+
+html(ng-app="amidstExamples")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
+    title amidst-examples
+    meta(name="description", content="amidst-examples")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+
+    base(href="/")
+
+    link(rel="shortcut icon", href="favicon.ico?v=2", type="image/x-icon")
+
+    <!-- build:css(./) styles/vendor.css -->
+    link(rel="stylesheet" href="components/animate.css/animate.css")
+    link(rel="stylesheet" href="components/bootflat/css/bootflat.css")
+    link(rel="stylesheet" href="components/bootflat/css/font-awesome.css")
+    <!-- endbuild -->
+
+    <!-- build:css(.tmp) styles/main.css -->
+    link(rel="stylesheet" href="index.css")
+
+    link(rel="stylesheet" href="layout/colors.css")
+    link(rel="stylesheet" href="layout/fonts.css")
+    link(rel="stylesheet" href="layout/typo.css")
+
+    link(rel="stylesheet" href="main/main.css")
+    link(rel="stylesheet" href="examples/proximity/proximity.css")
+    <!-- endbuild -->
+
+  body(ng-controller="BodyCtrl")
+
+    #buffer(ng-if="animReady")
+      #wrapper
+        .wrapper.main-view(ng-view)
+
+      footer#footer.wrapper.ng-cloak( ng-include="" src=" 'layout/footer.html' ")
+
+    <!-- build:js(./) scripts/plugins.js -->
+    script(src="components/jquery/dist/jquery.js")
+
+    script(src="components/angular/angular.js")
+
+    script(src="components/flowtype/flowtype.js")
+
+    script(src="socket.io/socket.io.js")
+    <!-- endbuild -->
+
+    <!-- build:js(./) scripts/modules.js -->
+    script(src="components/angular-animate/angular-animate.js")
+    script(src="components/angular-cookies/angular-cookies.js")
+    script(src="components/angular-resource/angular-resource.js")
+    script(src="components/angular-route/angular-route.js")
+    <!-- endbuild -->
+
+    <!-- build:js(.tmp) scripts/main.js -->
+    script(src="index.js")
+
+    script(src="layout/404/404.js")
+
+    script(src="main/main.js")
+
+    script(src="examples/proximity/proximity.js")
+    <!-- endbuild -->
+
+    <!-- Google Analytics: analytics.js -->
+    <!-- inject -->
