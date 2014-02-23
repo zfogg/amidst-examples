@@ -26,7 +26,11 @@ html(ng-app="amidstExamples")
     link(rel="stylesheet" href="layout/typo.css")
 
     link(rel="stylesheet" href="main/main.css")
-    link(rel="stylesheet" href="examples/proximity/proximity.css")
+
+    link(rel="stylesheet" href="proximity/proximity.css")
+    link(rel="stylesheet" href="follow-suggest/follow-suggest.css")
+    link(rel="stylesheet" href="newsfeed-plus/newsfeed-plus.css")
+    link(rel="stylesheet" href="meetups/meetups.css")
     <!-- endbuild -->
 
   body(ng-controller="BodyCtrl")
@@ -45,6 +49,8 @@ html(ng-app="amidstExamples")
     script(src="components/flowtype/flowtype.js")
 
     script(src="socket.io/socket.io.js")
+
+    script(src="components/moment/moment.js")
     <!-- endbuild -->
 
     <!-- build:js(./) scripts/modules.js -->
@@ -61,9 +67,10 @@ html(ng-app="amidstExamples")
 
     script(src="main/main.js")
 
-    script(src="examples/proximity/proximity.js")
-
-    script(src="examples/auto-follow/auto-follow.js")
+    script(src="proximity/proximity.js")
+    script(src="follow-suggest/follow-suggest.js")
+    script(src="newsfeed-plus/newsfeed-plus.js")
+    script(src="meetups/meetups.js")
     <!-- endbuild -->
 
     <!-- Google Analytics: analytics.js -->

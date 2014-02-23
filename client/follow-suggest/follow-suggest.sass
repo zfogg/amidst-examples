@@ -1,0 +1,48 @@
+
+#follow-suggest
+  &, input
+    text-align: center
+
+  input[type=text]
+    display: inline
+    background: transparent
+    border: none
+    min-width: 3rem
+    max-width: 10rem
+
+  input[type=number]
+    width: 4rem
+    display: inline
+    background: transparent
+    padding: 0 0 0 5px
+    border: none
+
+  input
+    border-bottom: 2px solid black !important
+
+  .row
+    margin-bottom: 2rem
+
+  #n-times
+    text-align: right
+  #n-days
+    text-align: left
+
+  #friends
+    .friend
+      max-width: 50rem
+      height: 3.5rem
+      p
+        line-height: 3.5rem
+      width: 100%
+      margin: 0 auto
+      background-image: linear-gradient(to bottom, #E1E1E1 0%, #EEEEEE 30%, #EEEEEE 70%, #E1E1E1 100%)
+      &:hover
+        background-image: linear-gradient(to bottom, #EEEEEE 0%, #E1E1E1 30%, #E1E1E1 70%, #EEEEEE 100%)
+
+.friend-animation
+  &.ng-leave
+    animation: fadeOutDown 1.5s
+  &.ng-enter
+    animation: fadeInLeftBig 1.7s
+

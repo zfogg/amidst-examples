@@ -1,0 +1,43 @@
+#newsfeed-plus.single-view
+  header#header
+    .row
+      .col-xs-12
+        a(href="/")
+          h2 index.io
+
+  section#content
+    .row
+      .col-xs-12
+        h3 newsfeed-plus
+        h4 control your newsfeed
+
+    .row
+      .col-xs-12
+        p facebook posts from the friends 
+          input#twitter-handle(type="text", ng-model="user")
+
+      .col-xs-6#n-times
+        p at least
+          input#meetings-number(type="number", ng-model="meetingsNumber")
+          | times
+
+      .col-xs-6#n-days
+        p in the last
+          input#days-number(type="number", ng-model="daysNumber")
+          | days
+
+    .row
+      .col-xs-12
+        button.btn.btn-default(ng-click="findFriends()") find them
+
+    .row(ng-if="friends.length == 0")
+      .col-xs-12
+        h5 we didn't find anyone :(
+    .row(ng-if="friends.length > 0")
+      .col-xs-12
+        h5 we found users that you've met before!
+        .row
+          .col-xs-12#friends
+            .friend.friend-animation(ng-repeat="f in friends")
+              a(href="//twitter.com/{{handles[f.name]}}" target="_blank")
+                p you met @{{handles[f.name]}} {{f.meetings}} times, most recently {{parseTime(f.lastSeen)}}.

@@ -1,0 +1,46 @@
+#follow-suggest.single-view
+  header#header
+    .row
+      .col-xs-12
+        a(href="/")
+          h2 index.io
+
+  section#content
+    .row
+      .col-xs-12
+        h3 follow-suggest
+        h4 finds friends for you to follow
+
+    .row
+      .col-xs-12
+        p twitter users who met with @
+          input#twitter-handle(type="text", ng-model="user")
+
+      .col-xs-6#n-times
+        p at least
+          input#meetings-number(type="number", ng-model="meetingsNumber", pattern="[0-9.]+")
+          | times
+
+
+      .col-xs-6#n-days
+        p in the last
+          input#days-number(type="number", ng-model="daysNumber", pattern="[0-9.]+")
+          | days
+
+    .row
+      .col-xs-12
+        button.btn.btn-default(ng-click="findFriends()") find them
+
+    .row(ng-if="friends.length > 0")
+      .col-xs-12
+        h5
+          | here's what we found
+    .row
+      .col-xs-12#friends
+        .friend.friend-animation(ng-repeat="f in friends")
+          a(href="//twitter.com/{{handles[f.name]}}" target="_blank")
+            p you met @{{handles[f.name]}} {{f.meetings}} times, most recently {{parseTime(f.lastSeen)}}.
+
+    .row(ng-if="friends.length == 0")
+      .col-xs-12
+        h5 we didn't find anyone :(

@@ -14,18 +14,20 @@ angular.module("amidstExamples", [
       .when "/",
         templateUrl: "main/index.html"
         controller: "MainCtrl"
-      .when "/examples/proximity",
-        templateUrl: "examples/proximity/index.html"
+
+      .when "/proximity",
+        templateUrl: "proximity/index.html"
         controller: "ProximityCtrl"
-      .when "/examples/auto-follow",
-        templateUrl: "examples/auto-follow/index.html"
-        controller: "AutoFollowCtrl"
-      .when "/examples/livegraph",
-        templateUrl: "examples/livegraph/index.html"
-        controller: "LiveGraphCtrl"
-      .when "/examples/foursquare-plus",
-        templateUrl: "examples/foursquare-plus/index.html"
-        controller: "FoursquarePlusCtrl"
+      .when "/follow-suggest",
+        templateUrl: "follow-suggest/index.html"
+        controller: "FollowSuggestCtrl"
+      .when "/newsfeed-plus",
+        templateUrl: "newsfeed-plus/index.html"
+        controller: "NewsfeedPlusCtrl"
+      .when "/meetups",
+        templateUrl: "meetups/index.html"
+        controller: "MeetupsCtrl"
+
       .when "/404",
         templateUrl: "layout/404/index.html"
         controller: "404Ctrl"
@@ -57,10 +59,5 @@ angular.module("amidstExamples", [
       $window.ga? "set", "page", $location.path()
       $window.ga? "send", "pageview"
 
-  .factory "namespace", ->
-    (target, name, block) ->
-      [target, name, block] = [(if typeof exports isnt 'undefined' then exports else window), arguments...] if arguments.length < 3
-      top    = target
-      target = target[item] or= {} for item in name.split '.'
-      block target, top
 
+window.s = null

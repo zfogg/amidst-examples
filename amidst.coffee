@@ -3,11 +3,11 @@
 
 ready.done ->
   # Angular Routes
-  app.get "/",                         indexRoute
-  app.get "/examples/proximity",       indexRoute
-  app.get "/examples/auto-follow",     indexRoute
-  app.get "/examples/livegraph",       indexRoute
-  app.get "/examples/foursquare-plus", indexRoute
+  app.get "/",                indexRoute
+  app.get "/proximity",       indexRoute
+  app.get "/follow-suggest",  indexRoute
+  app.get "/newsfeed-plus",   indexRoute
+  app.get "/meetups",         indexRoute
 
   # 404
   app.get "/404", indexRoute
