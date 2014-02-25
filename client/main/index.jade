@@ -6,51 +6,19 @@
       .col-xs-12
         a(href="/")
           h2 index.io
-        h3 example apps
-
-    .vspace
-    .vspace
-    .vspace
-    .vspace
-    .vspace
-    p.
-      Our API gives developers unprecedented access to users' interactions in the
-      real world. The Index.io mobile SDK figures out when two people come in close
-      contact.
-    p.
-      Because it uses low-energy Bluetooth to accomplish this, our SDK will
-      work even while your user's phone is locked and in their pocket, and even
-      while your app is in the background. Our SDK report geo-tagged meeting
-      information to our API. Index.io takes those meetings, along with the
-      meetings from the rest of the apps on our API, and builds a social graph
-      with them.
-    p.
-      For example, what if I forget to exchange contact information with people here
-      at LAUNCH hackathon before I go home? Twitter app developers could
-      easily ask the Index.io API "who was @zfogg near in the last 48 hours?",
-      and they would receive a list of users that @zfogg probably wants to follow.
-    p.
-      Smaller apps can also benefit from our API! Once a new app joins our API network,
-      they gain access to the entire history of our social graph, and they can use that
-      data for things like initial contact-onboarding, making their app's newsfeeds more
-      relevant, and much more!
-    p.
-      Location-based games, match-making services, contact-exchanges . . . the
-      possibilities are endless! Index.io is very excited to see how our API users
-      will take advantage of this never-before-seen dataset.
-    .vspace
-    .vspace
-    .vspace
+        h3 a social graph of real-world interactions
 
     .row
-      .example
-        a(href="/proximity")
-          p proximity
+      //-.example
+        //-a(href="/proximity")
+          //-p proximity
       .example
         a(href="/follow-suggest")
           p
             i.fa.fa-twitter.fa-lg
             | &ensp;follow-suggest
+      br
+      small.h6 ^ click me! :)
       //-.example
         //-a(href="/newsfeed-plus")
           //-p
@@ -59,4 +27,42 @@
       //-.example
         //-a(href="/meetups")
           //-p meetups
+
+    .vspace
+    .vspace
+    .vspace
+
+    .row
+      #pitch.col-xs-12.col-md-8.col-md-push-2
+        h4.text-center
+          | Our API gives developers unprecedented access to users' interactions in the
+          | real world.
+        h5.text-center
+          small The Index.io mobile SDK reports when two users are near.
+        .vspace
+        p.
+          Because it uses low-energy Bluetooth to accomplish this, our SDK will
+          work even while your user's phone is locked and in their pocket, and even
+          while your app is in the background. Our SDK report geo-tagged meeting
+          information to our API. Index.io takes those meetings, along with the
+          meetings from the rest of the apps on our API, and builds a social graph
+          with them.
+        h5
+          blockquote "who was @zfogg near in the last 48 hours?"
+        p.
+          For example, what if I forget to exchange contact information with people here
+          at LAUNCH hackathon before I go home? Twitter app developers could
+          easily ask the Index.io API "who was @zfogg near in the last 48 hours?",
+          and they would receive a list of users that @zfogg probably wants to follow.
+        p.
+          Smaller apps can also benefit from our API! Once a new app joins our API network,
+          they gain access to the entire history of our social graph, and they can use that
+          data for things like initial contact-onboarding, making their app's newsfeeds more
+          relevant, and much more!
+        p.
+          Location-based games, match-making services, contact-exchanges . . . the
+          possibilities are endless! Index.io is very excited to see how our API users
+          will take advantage of this never-before-seen dataset.
+
+    .vspace
 

@@ -1,11 +1,7 @@
-@import 'sass-bootstrap/lib/mixins'
 @import 'sass-bootstrap/lib/variables'
 @import '../layout/variables'
 
-@import 'sass-bootstrap/lib/normalize'
-@import 'sass-bootstrap/lib/glyphicons'
-@import 'sass-bootstrap/lib/grid'
-@import 'sass-bootstrap/lib/buttons'
+@import 'sass-bootstrap/lib/mixins'
 
 
 #content
@@ -18,6 +14,7 @@
     vertical-align: middle
 
     height: 5rem
+
     p
       line-height: 5rem
 
@@ -26,3 +23,11 @@
         font-weight: bold
       background-color: darken($gray-lighter, 5%)
       animation: pulse .3s
+
+  #pitch
+    text-align: left
+    white-space: normal
+    padding: 0 5rem
+
+    p
+      text-indent: 3rem
