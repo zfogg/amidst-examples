@@ -6,7 +6,7 @@
   },
   "repository": "http://github.com/zfogg/zfo.gg",
   "dependencies": {
-    "express": "~3.4.3",
+    "express": "~4.17.1",
     "jade": "~1.1.5",
     "socket.io": "~0.9.16",
     "q": "~0.9.7",
